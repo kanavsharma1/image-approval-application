@@ -1,28 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+import styled from "styled-components";
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ 
+export const Spinner = styled.div`
 
 .loader,
 .loader:before,
 .loader:after {
-  background: #2559c1;
+  background: #ffffff;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
 }
 .loader {
-  color: #2559c1;
+  color: #ffffff;
   text-indent: -9999em;
   margin: 88px auto;
   position: relative;
@@ -70,4 +61,4 @@ code {
     box-shadow: 0 -2em;
     height: 5em;
   }
-}
+}`
